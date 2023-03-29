@@ -39,13 +39,13 @@ public class Ejercicio06 {
                     + "Elija la opcion\n");
             opcion = leer.nextInt();
             switch(opcion) {
-                case 1: System.out.println("la suma da: " + (num1+num2) +"\n"+"\n");
+                case 1: System.out.println("la suma da: " + (num1+num2) +"\n \n");
                 break;
-                case 2: System.out.println("la resta da: " + (num1-num2)+"\n"+"\n");
+                case 2: System.out.println("la resta da: " + (num1-num2)+"\n \n");
                 break;
-                case 3: System.out.println("La multp. da: " + (num1*num2)+"\n"+"\n");
+                case 3: System.out.println("La multp. da: " + (num1*num2)+"\n \n");
                 break;
-                case 4: System.out.println("La div. da: " + (num1/num2)+"\n"+"\n");
+                case 4: System.out.println("La div. da: " + (num1/num2)+"\n \n");
                 break;
                 case 5: System.out.println("Seguro que desea salir? (S/N)");
                 String confirmacion = leer.next();

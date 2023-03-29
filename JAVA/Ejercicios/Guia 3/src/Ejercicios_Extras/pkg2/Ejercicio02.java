@@ -23,16 +23,9 @@ public class Ejercicio02 {
         Scanner leer = new Scanner(System.in);
 
         int A = 1, B = 2, C = 3, D = 4, aux = 0;
-        System.out.println("A= " + A + "\n"
-                         + "B= " + B + "\n"
-                         + "C= " + C + "\n"
-                         + "D= " + D);
-        System.out.println("");
+        System.out.println("A= " + A + "\n" + "B= " + B + "\n" + "C= " + C + "\n" + "D= " + D + "\n");
         aux = B;B = C;C = A; A = D;D = aux;
-        System.out.println("A= " + A + "\n"
-                         + "B= " + B + "\n"
-                         + "C= " + C + "\n"
-                         + "D= " + D);
+        System.out.println("A= " + A + "\n" + "B= " + B + "\n" + "C= " + C + "\n" + "D= " + D);
     }
 
 }

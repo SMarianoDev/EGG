@@ -17,6 +17,7 @@ public class Ejercicio03 {
     public static void main(String[] args) {
         
         Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese una letra");
         String vocal = leer.next();
         if(vocal.equalsIgnoreCase("A")||vocal.equalsIgnoreCase("E")||vocal.equalsIgnoreCase("I")||vocal.equalsIgnoreCase("O")||vocal.equalsIgnoreCase("U")){
             System.out.println("La letra es una VOCAL");

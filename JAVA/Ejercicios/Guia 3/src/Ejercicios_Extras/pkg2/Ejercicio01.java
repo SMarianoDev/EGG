@@ -24,8 +24,7 @@ public class Ejercicio01 {
         if (horas >= 24){
             dias++;
             horas -= 24;
-            System.out.print(dias + " Dia/s, ");
-            System.out.print(horas + " Hora/s.\n");
+            System.out.print(dias + " Dia/s, " + horas + " Hora/s.");
         }else{
             System.out.print(horas + " Hora/s.\n");
         }
