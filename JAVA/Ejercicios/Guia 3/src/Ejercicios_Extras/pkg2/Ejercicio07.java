@@ -30,13 +30,11 @@ public class Ejercicio07 {
             int num = leer.nextInt();
             if (num > 0) {
                 suma += num;
-                if (num > numMax) {
-                    numMax = num;
-                }
+                numMax = Integer.max(numMax, num);
                 if (numMin == 0) {
                     numMin = num;
-                } else if (num < numMin) {
-                    numMin = num;
+                } else{
+                    numMin = Integer.min(numMin, num);
                 }
                 i++;
             }else{
@@ -53,19 +51,17 @@ public class Ejercicio07 {
         do {
             System.out.println("Ingrese un numero");
             int num = leer.nextInt();
-            if(num>0){
-            suma += num;
-            if (num > numMax) {
-                numMax = num;
-            }
-            if (i == 0) {
-                numMin = num;
-            } else if (num < numMin) {
-                numMin = num;
-            }
-            i++;
+            if (num > 0) {
+                suma += num;
+                numMax = Integer.max(numMax, num);
+                if (numMin == 0) {
+                    numMin = num;
+                } else{
+                    numMin = Integer.min(numMin, num);
+                }
+                i++;
             }else{
-                System.out.println("Ingrese un numero positivo");
+                System.out.println("ingrese un numero positivo");
             }
         } while (i < n);
         System.out.println("El promedio es de: " + (suma / i));

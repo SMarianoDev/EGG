@@ -22,43 +22,55 @@ public class Ejercicio12 {
         Scanner leer = new Scanner(System.in);
         int cont1 = 0, cont2 = 0, cont3 = 0;
 
-        while (true) {
-            if (cont3 < 9) {
-                cont3++;
-            } else if (cont2 < 9) {
-                cont3 = 0;
-                cont2++;
-            } else if (cont1 < 9) {
-                cont3 = 0;
-                cont2 = 0;
-                cont1++;
-            } else {
-                break;
-            }
-            if (cont1 == 3 || cont2 == 3 || cont3 == 3) {
-                if (cont1 == 3) {
-                    if (cont2 == 3 && cont3 == 3) {
-                        System.out.println("E" + "-" + "E" + "-" + "E");
-                    } else if (cont2 == 3) {
-                        System.out.println("E" + "-" + "E" + "-" + cont3);
-                    } else if (cont3 == 3) {
-                        System.out.println("E" + "-" + cont2 + "-" + "E");
-                    } else {
-                        System.out.println("E" + "-" + cont2 + "-" + cont3);
-                    }
-                } else if (cont2 == 3) {
-                    if (cont3 == 3) {
-                        System.out.println(cont1 + "-" + "E" + "-" + "E");
-                    } else {
-                        System.out.println(cont1 + "-" + "E" + "-" + cont3);
-                    }
-                } else if (cont3 == 3) {
-                    System.out.println(cont1 + "-" + cont2 + "-" + "E");
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                for (int k = 0; k < 10; k++) {
+                    String num1 = String.valueOf(i);
+                    String num2 = String.valueOf(j);
+                    String num3 = String.valueOf(k);
+                    System.out.println(num1.replace("3", "E") + "-" + num2.replace("3", "E") + "-" + num3.replace("3", "E"));
                 }
-            } else {
-                System.out.println(cont1 + "-" + cont2 + "-" + cont3);
             }
         }
-    }
+//        while (true) {
+//            if (cont3 < 9) {
+//                cont3++;
+//            } else if (cont2 < 9) {
+//                cont3 = 0;
+//                cont2++;
+//            } else if (cont1 < 9) {
+//                cont3 = 0;
+//                cont2 = 0;
+//                cont1++;
+//            } else {
+//                break;
+//            }
+//
+//            System.out.println(num1.replace("3", "E") + "-" + num2.replace("3", "E") + "-" + num3.replace("3", "E"));
+//            if (cont1 == 3 || cont2 == 3 || cont3 == 3) {
+//                if (cont1 == 3) {
+//                    if (cont2 == 3 && cont3 == 3) {
+//                        System.out.println("E" + "-" + "E" + "-" + "E");
+//                    } else if (cont2 == 3) {
+//                        System.out.println("E" + "-" + "E" + "-" + cont3);
+//                    } else if (cont3 == 3) {
+//                        System.out.println("E" + "-" + cont2 + "-" + "E");
+//                    } else {
+//                        System.out.println("E" + "-" + cont2 + "-" + cont3);
+//                    }
+//                } else if (cont2 == 3) {
+//                    if (cont3 == 3) {
+//                        System.out.println(cont1 + "-" + "E" + "-" + "E");
+//                    } else {
+//                        System.out.println(cont1 + "-" + "E" + "-" + cont3);
+//                    }
+//                } else if (cont3 == 3) {
+//                    System.out.println(cont1 + "-" + cont2 + "-" + "E");
+//                }
+//            } else {
+//                System.out.println(cont1 + "-" + cont2 + "-" + cont3);
+//            }
+//        }
 
+    }
 }
