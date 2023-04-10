@@ -77,16 +77,16 @@ public class Ejercicios06 {
             for (int j = 0; j < 20; j++) {
                 if (si) {
                     if (j > rand && j <= (rand + longitudP)) {
-                        System.out.print(palabra.substring(cont, (cont + 1))+" ");
+                        System.out.print(palabra.substring(cont, (cont + 1)) + " ");
                         cont++;
                     } else {
                         int rand2 = (int) (Math.random() * 10);
-                        System.out.print(rand2+" ");
+                        System.out.print(rand2 + " ");
                     }
 
                 } else {
                     int rand2 = (int) (Math.random() * 10);
-                    System.out.print(rand2+" ");
+                    System.out.print(rand2 + " ");
                 }
             }
             System.out.println("");
