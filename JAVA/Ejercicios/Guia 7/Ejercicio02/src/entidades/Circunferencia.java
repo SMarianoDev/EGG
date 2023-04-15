@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author maria
+ * @author Mariano Sotelo
  */
 public class Circunferencia {
 
@@ -38,5 +38,5 @@ public class Circunferencia {
     public double perimetro(double radio) {
         return 2 * Math.PI * radio;
     }
-
+    
 }

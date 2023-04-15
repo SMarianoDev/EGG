@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author maria
+ * @author Mariano Sotelo
  */
 
 public class Libro {
