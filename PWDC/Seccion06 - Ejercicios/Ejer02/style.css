@@ -1,0 +1,41 @@
+.container1 >.box1 {
+  border: 1px solid darkkhaki;
+  background-color: coral;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  display: flex;
+  justify-content: start;
+}
+.container1 >.box2 {
+  border: 1px solid darkkhaki;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.container1 >.box3 {
+  border: 1px solid darkkhaki;
+  background-color: darkseagreen;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+/* .container1{
+    display: flex;
+    justify-content: start;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.container3{
+    display: flex;
+    justify-content: end;
+} */
+
+/* ctrl+k+c (agrego comentario) */
+
+/* ################################ */

@@ -29,7 +29,7 @@ public class Ejercicio04 {
             System.out.println("Cuanto desea retirar?");
             int retiro = leer.nextInt();
             if (c1.getSaldo() >= retiro) {
-                c1.retirarDinero(retiro);
+                System.out.println(c1.retirarDinero(retiro));
                 System.out.println("Saldo en cuenta: "+ c1.getSaldo());
             } else {
                 System.out.println("No tiene fondos suficientes");
@@ -39,6 +39,7 @@ public class Ejercicio04 {
             String op = leer.next();
             if (op.equalsIgnoreCase("N")) {
                 System.out.println("Saldo en cuenta: " + c1.getSaldo());
+                
                 break;
             }
         } while (true);

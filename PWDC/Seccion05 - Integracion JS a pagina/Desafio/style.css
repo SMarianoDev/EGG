@@ -1,0 +1,39 @@
+body {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "arial", sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  font-family: "georgia", serif;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }

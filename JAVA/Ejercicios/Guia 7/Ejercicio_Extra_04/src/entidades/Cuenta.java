@@ -33,9 +33,10 @@ public class Cuenta {
         this.titular = titular;
     }
 
-    public void retirarDinero(int retiro) {
+    public String retirarDinero(int retiro) {
 
         this.saldo -= retiro;
+        return "saldo:" + this.saldo;
 
     }
 
